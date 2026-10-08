@@ -2,7 +2,7 @@
 
 A job application tracker for job seekers. Add applications, drag them across a kanban board as they progress, get reminders for interviews and follow-ups, and see how your search is going on a dashboard.
 
-**Live demo:** _add your Vercel link here after deploying_
+**Live demo:** https://jobtrail-mu.vercel.app/
 
 ## Features
 
