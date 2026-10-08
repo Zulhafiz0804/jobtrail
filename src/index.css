@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+/* Our own colors and font. Tailwind turns these into classes:
+   bg-canvas, bg-wishlist, bg-applied, text-ink, font-display, etc. */
+@theme {
+  --font-display: 'Fredoka', ui-rounded, system-ui, sans-serif;
+  --color-canvas: #ece6fb;
+  --color-ink: #2b2540;
+  --color-wishlist: #e6dfff;
+  --color-applied: #d9eafd;
+  --color-interview: #fff0bf;
+  --color-offer: #d2f3e0;
+  --color-rejected: #ffdde2;
+}
+
+body {
+  font-family: 'Nunito', system-ui, sans-serif;
+  color: var(--color-ink);
+  min-height: 100vh;
+  /* Soft three-color wash: lilac -> sky -> blush. Stays in place while you scroll. */
+  background: linear-gradient(160deg, #e6defa 0%, #dcebfb 55%, #fbe3ec 100%) fixed;
+}
+
+:focus-visible { outline: 2px solid #0f766e; outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
